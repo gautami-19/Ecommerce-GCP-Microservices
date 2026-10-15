@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Cart{% endblock %}
+{% block content %}
+<h1>Your Cart</h1>
+{% for item in items %}
+<div class="row">
+<span>{{ item.name }} × {{ item.quantity }}</span>
+<span>₹{{ "%.2f"|format(item.price * item.quantity) }}</span>
+<form method="post" action="/cart/remove/{{ item.id }}"><button>Remove</button></form>
+</div>
+{% else %}<p>Your cart is empty.</p>{% endfor %}
+<h2>Total: ₹{{ "%.2f"|format(total) }}</h2>
+{% if items %}<form method="post" action="/checkout"><button>Place Order</button></form>{% endif %}
+{% endblock %}

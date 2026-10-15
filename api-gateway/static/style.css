@@ -1,0 +1,11 @@
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#222}
+nav{background:#222;color:#fff;padding:16px;display:flex;justify-content:space-between}
+nav a{color:#fff;text-decoration:none;margin-left:15px}
+main{max-width:1000px;margin:30px auto;padding:0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 2px 8px #ddd}
+.form{display:flex;flex-direction:column;gap:12px;max-width:400px}
+.form input{padding:12px;border:1px solid #ccc;border-radius:5px}
+button,.button{background:#222;color:white;border:0;padding:10px 15px;border-radius:5px;cursor:pointer;text-decoration:none;display:inline-block}
+.row{background:white;margin:10px 0;padding:15px;display:flex;gap:20px;align-items:center;justify-content:space-between}
+.message{padding:12px;background:#e8f5e9;margin-bottom:15px;border-radius:5px}
